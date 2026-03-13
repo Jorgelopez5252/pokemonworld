@@ -22,10 +22,7 @@ export interface PoekmonListResponse {
 
 export async function fetchPokemonTypes(): Promise<PokemonType[]> {
   const res = await fetch(`${POKEAPI_BASE}/type`, {
-    cache: "force-cache",
-    // cache all time
-    // next: { revalidate: 3600 },
-    // cache for 1 hour
+    cache: "force-cache", // cache all time
   });
 
   if (!res.ok) {
