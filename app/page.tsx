@@ -1,7 +1,7 @@
 import { fetchPokemonList, fetchPokemonTypes, fetchPokemonByType } from "@/lib/pokeapi";
-// import PokemonList from "@/app/components/PokemonList";
+import PokemonList from "@/app/components/PokemonList";
 import PokemonFilters from "@/app/components/PokemonFilters";
-// import PokemonPagination from "@/app/components/PokemonPagination";
+import PokemonPagination from "@/app/components/PokemonPagination";
 
 const ITEMS_PER_PAGE = 20;
 
